@@ -1,0 +1,13 @@
+Describe what you would consider the top 3 characteristics of an excellent programmer.
+Why are these characteristics important? One or two sentences per characteristic is fine.
+
+1. Quality. That means he/she can build a code that's readable and testable. He doesn't pass on the
+opportunity to mercilessly refactor his code and, at the same time, he/she knows how to balance that with
+the business needs.
+
+2. Has profound knowledge of the programming language he/she uses. A programmer has to know as much as he/she can about
+the technology used to better implement the requirements and produce a clean, stable and performatic application.
+
+3. Codes a product not pieces of software. When you care about the whole your attitude changes. You're able to give better solution to
+problems. You know where the core value for your business is.
+
