@@ -57,4 +57,14 @@ describe Customer do
       customer.total_won.should == 40.0
     end
   end
+  describe "#total_wins" do
+    it "should return how many times the user won" do
+      machine.should_receive(:spin).once.and_return(20.0)
+      customer.play machine
+      machine.should_receive(:spin).once.and_return(0.0)
+      customer.play machine
+      customer.total_wins.should == 1
+
+    end
+  end
 end
