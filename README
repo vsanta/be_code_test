@@ -1,0 +1,25 @@
+Problem Description
+--------------------
+Start building a small Casino app. We’re not looking for a complete app, we’re not even looking for a front end. Rather, we’d like to see how you approach the problem, implement the classes etc.
+
+Main entities:
+* Customers who have a certain amount to spend (can be random at first)
+* Poker machines & drinks that have a certain cost (can also be random)
+
+Customers can:
+* Play poker machines with a chance of winning
+* Buy drinks
+
+The app should track (per customer):
+* Total spent
+* Total won
+* Number of wins
+
+Requirements
+------------
+* gem install bundler
+* bundle install
+
+To run tests
+-------------
+* bundle exec rspec spec
