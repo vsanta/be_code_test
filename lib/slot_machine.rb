@@ -11,10 +11,10 @@ class SlotMachine
 
   private
   def prize_percentage
-    prize_ajustment = rand(100)
-    if prize_ajustment == 0
+    prize_adjustment = rand(100)
+    if prize_adjustment == 0
       return 0
     end
-    prize_ajustment / 100 + 1
+    prize_adjustment / 100 + 1
   end
 end
