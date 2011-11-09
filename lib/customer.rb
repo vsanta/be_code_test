@@ -4,4 +4,8 @@ class Customer
   def initialize
     @money = rand(100) +1
   end
+
+  def drink beverage
+    @money = @money - beverage.price
+  end
 end
