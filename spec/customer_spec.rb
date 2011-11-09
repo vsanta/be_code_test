@@ -1,12 +1,16 @@
 require_relative "../lib/customer"
 
 describe Customer do
+  it "should have a name" do
+    customer = Customer.new "John"
+    customer.name = "John"
+  end
   it "should have some money" do
-    customer = Customer.new
+    customer = Customer.new "John"
     customer.money.should > 0.0
   end
   let :customer do
-    customer = Customer.new
+    customer = Customer.new "John"
     customer.money = 100.0
     customer
   end
