@@ -6,11 +6,16 @@ class Customer
   end
 
   def drink beverage
-    @money = @money - beverage.price
+    spend  beverage.price
   end
 
   def play machine
-    @money = @money - machine.bet_cost
+    spend machine.bet_cost
     @money += machine.spin
+  end
+
+  private
+  def spend value
+    @money = @money - value
   end
 end
