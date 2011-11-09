@@ -14,15 +14,17 @@ class Customer
 
   def play machine
     spend machine.bet_cost
-    prize = machine.spin
-    @money += prize
-    @total_won += prize
-    @total_wins += 1 if prize > 0
+    handle_prize machine.spin
   end
 
   private
   def spend value
     @money = @money - value
     @total_spent += value
+  end
+  def handle_prize prize
+    @money += prize
+    @total_won += prize
+    @total_wins += 1 if prize > 0
   end
 end
