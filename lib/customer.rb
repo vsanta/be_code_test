@@ -11,5 +11,6 @@ class Customer
 
   def play machine
     @money = @money - machine.bet_cost
+    @money += machine.spin
   end
 end

@@ -28,8 +28,16 @@ describe Customer do
       machine
     end
     it "should use money to play on the slot machines" do
+      machine.stub(:spin) { 0.0 }
       customer.play machine
       customer.money.should == 90.0
+    end
+    context "customer wins" do
+      it "should have prize value credited" do
+        machine.stub(:spin) { 20.0 }
+        customer.play machine
+        customer.money.should == 110.0
+      end
     end
   end
 end
