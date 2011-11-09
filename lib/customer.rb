@@ -1,9 +1,10 @@
 class Customer
-  attr_accessor :money, :total_spent
+  attr_accessor :money, :total_spent, :total_won
 
   def initialize
     @money = rand(100) +1
     @total_spent = 0
+    @total_won = 0
   end
 
   def drink beverage
@@ -12,7 +13,9 @@ class Customer
 
   def play machine
     spend machine.bet_cost
-    @money += machine.spin
+    prize = machine.spin
+    @money += prize
+    @total_won += prize
   end
 
   private

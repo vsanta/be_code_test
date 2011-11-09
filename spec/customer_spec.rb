@@ -48,4 +48,13 @@ describe Customer do
       customer.total_spent.should == 15.0
     end
   end
+  describe "#total_won" do
+    it "should return how much customer won" do
+      machine.stub(:spin) { 20.0 }
+      customer.drink beverage
+      customer.play machine
+      customer.play machine
+      customer.total_won.should == 40.0
+    end
+  end
 end
