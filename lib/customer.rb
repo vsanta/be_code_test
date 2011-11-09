@@ -1,8 +1,9 @@
 class Customer
-  attr_accessor :money
+  attr_accessor :money, :total_spent
 
   def initialize
     @money = rand(100) +1
+    @total_spent = 0
   end
 
   def drink beverage
@@ -17,5 +18,6 @@ class Customer
   private
   def spend value
     @money = @money - value
+    @total_spent += value
   end
 end
